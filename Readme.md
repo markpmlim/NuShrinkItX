@@ -53,5 +53,13 @@ XCode 11.x, Swift 5.0 or later
 
 ### Links
 
-Apple's 
+https://developer.apple.com/documentation/appkit/developing-a-document-based-app
 
+https://github.com/fadden/ciderpress/tree/master
+
+https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Quicklook_Programming_Guide/Introduction/Introduction.html
+
+https://developer.apple.com/library/archive/documentation/Carbon/Conceptual/MDImporters/MDImporters.html
+
+
+Apple's QuickLook and Spotlight have not been revised.
