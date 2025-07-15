@@ -1,0 +1,1 @@
+#import "Foundation/Foundation.h"@class SHTreeObject;@interface SHTree : NSObject+ (NSMutableArray *) buildMultipleRoots:(NSMutableArray *)flatListOfTreeObjects;+ (SHTreeObject *) buildSingleRoot:(NSMutableArray *)flatListOfTreeObjects;+ (void) print:(NSArray *)rootObjects;+ (void) visitNode:(SHTreeObject *)theNode;@end

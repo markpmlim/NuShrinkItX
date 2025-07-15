@@ -1,0 +1,944 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE068FF31D98E482009B582E /* AttributesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE068FF21D98E482009B582E /* AttributesWindowController.swift */; };
+		EE068FF61D98E533009B582E /* AttributesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE068FF51D98E533009B582E /* AttributesViewController.swift */; };
+		EE0BEE081B95C75A0093E88D /* NuFX-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = EE0BEE071B95C75A0093E88D /* NuFX-Bridging-Header.h */; };
+		EE11B1281F2A8B250060A13A /* NUTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11B1271F2A8B250060A13A /* NUTree.swift */; };
+		EE17EE961D88B7EC00E6CAC1 /* TreeViewControllerHandleDrops.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE17EE951D88B7EC00E6CAC1 /* TreeViewControllerHandleDrops.swift */; };
+		EE18A3371B95924B0093C7F6 /* NuFX.h in Headers */ = {isa = PBXBuildFile; fileRef = EE18A3361B95924B0093C7F6 /* NuFX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE18A3711B9592970093C7F6 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = EE18A3541B9592970093C7F6 /* config.h */; };
+		EE18A3721B9592970093C7F6 /* MiscStuff.h in Headers */ = {isa = PBXBuildFile; fileRef = EE18A3551B9592970093C7F6 /* MiscStuff.h */; };
+		EE18A3731B9592970093C7F6 /* NufxLib.h in Headers */ = {isa = PBXBuildFile; fileRef = EE18A3561B9592970093C7F6 /* NufxLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE18A3741B9592970093C7F6 /* NufxLibPriv.h in Headers */ = {isa = PBXBuildFile; fileRef = EE18A3571B9592970093C7F6 /* NufxLibPriv.h */; };
+		EE18A3751B9592970093C7F6 /* SysDefs.h in Headers */ = {isa = PBXBuildFile; fileRef = EE18A3581B9592970093C7F6 /* SysDefs.h */; };
+		EE18A3761B9592970093C7F6 /* Archive.c in Sources */ = {isa = PBXBuildFile; fileRef = EE18A35A1B9592970093C7F6 /* Archive.c */; };
+		EE18A3771B9592970093C7F6 /* ArchiveIO.c in Sources */ = {isa = PBXBuildFile; fileRef = EE18A35B1B9592970093C7F6 /* ArchiveIO.c */; };
+		EE18A3781B9592970093C7F6 /* Bzip2.c in Sources */ = {isa = PBXBuildFile; fileRef = EE18A35C1B9592970093C7F6 /* Bzip2.c */; };
+		EE18A3791B9592970093C7F6 /* Charset.c in Sources */ = {isa = PBXBuildFile; fileRef = EE18A35D1B9592970093C7F6 /* Charset.c */; };
+		EE18A37A1B9592970093C7F6 /* Compress.c in Sources */ = {isa = PBXBuildFile; fileRef = EE18A35E1B9592970093C7F6 /* Compress.c */; };
+		EE18A37B1B9592970093C7F6 /* Crc16.c in Sources */ = {isa = PBXBuildFile; fileRef = EE18A35F1B9592970093C7F6 /* Crc16.c */; };
+		EE18A37C1B9592970093C7F6 /* Debug.c in Sources */ = {isa = PBXBuildFile; fileRef = EE18A3601B9592970093C7F6 /* Debug.c */; };
+		EE18A37D1B9592970093C7F6 /* Deferred.c in Sources */ = {isa = PBXBuildFile; fileRef = EE18A3611B9592970093C7F6 /* Deferred.c */; };
+		EE18A37E1B9592970093C7F6 /* Deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = EE18A3621B9592970093C7F6 /* Deflate.c */; };
+		EE18A37F1B9592970093C7F6 /* Entry.c in Sources */ = {isa = PBXBuildFile; fileRef = EE18A3631B9592970093C7F6 /* Entry.c */; };
+		EE18A3801B9592970093C7F6 /* Expand.c in Sources */ = {isa = PBXBuildFile; fileRef = EE18A3641B9592970093C7F6 /* Expand.c */; };
+		EE18A3811B9592970093C7F6 /* FileIO.c in Sources */ = {isa = PBXBuildFile; fileRef = EE18A3651B9592970093C7F6 /* FileIO.c */; };
+		EE18A3821B9592970093C7F6 /* Funnel.c in Sources */ = {isa = PBXBuildFile; fileRef = EE18A3661B9592970093C7F6 /* Funnel.c */; };
+		EE18A3831B9592970093C7F6 /* Lzc.c in Sources */ = {isa = PBXBuildFile; fileRef = EE18A3671B9592970093C7F6 /* Lzc.c */; };
+		EE18A3841B9592970093C7F6 /* Lzw.c in Sources */ = {isa = PBXBuildFile; fileRef = EE18A3681B9592970093C7F6 /* Lzw.c */; };
+		EE18A3851B9592970093C7F6 /* MiscStuff.c in Sources */ = {isa = PBXBuildFile; fileRef = EE18A3691B9592970093C7F6 /* MiscStuff.c */; };
+		EE18A3861B9592970093C7F6 /* MiscUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = EE18A36A1B9592970093C7F6 /* MiscUtils.c */; };
+		EE18A3871B9592970093C7F6 /* Record.c in Sources */ = {isa = PBXBuildFile; fileRef = EE18A36B1B9592970093C7F6 /* Record.c */; };
+		EE18A3881B9592970093C7F6 /* SourceSink.c in Sources */ = {isa = PBXBuildFile; fileRef = EE18A36C1B9592970093C7F6 /* SourceSink.c */; };
+		EE18A3891B9592970093C7F6 /* Squeeze.c in Sources */ = {isa = PBXBuildFile; fileRef = EE18A36D1B9592970093C7F6 /* Squeeze.c */; };
+		EE18A38A1B9592970093C7F6 /* Thread.c in Sources */ = {isa = PBXBuildFile; fileRef = EE18A36E1B9592970093C7F6 /* Thread.c */; };
+		EE18A38B1B9592970093C7F6 /* Value.c in Sources */ = {isa = PBXBuildFile; fileRef = EE18A36F1B9592970093C7F6 /* Value.c */; };
+		EE18A38C1B9592970093C7F6 /* Version.c in Sources */ = {isa = PBXBuildFile; fileRef = EE18A3701B9592970093C7F6 /* Version.c */; };
+		EE25AB772E09863500FDB31A /* TreeViewControllerPromisedFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE25AB762E09863500FDB31A /* TreeViewControllerPromisedFiles.swift */; };
+		EE25AB7B2E09879A00FDB31A /* TreeControllerHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE25AB7A2E09879A00FDB31A /* TreeControllerHelpers.swift */; };
+		EE2977BD1F2B67160098D8F5 /* CleanupWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2977BC1F2B67160098D8F5 /* CleanupWindowController.swift */; };
+		EE2977C01F2B6D630098D8F5 /* CleanupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2977BF1F2B6D630098D8F5 /* CleanupViewController.swift */; };
+		EE2987951D8011E700947E35 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = EE2987931D8011E700947E35 /* Credits.rtf */; };
+		EE2A02CD1DAE50E700CE3667 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A02CC1DAE50E700CE3667 /* TableViewController.swift */; };
+		EE2A076F1DAFA22D00EFDD50 /* AdvancedPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A076E1DAFA22D00EFDD50 /* AdvancedPreferencesViewController.swift */; };
+		EE2A86C51D8747ED00D9D2F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A86B71D8747ED00D9D2F8 /* AppDelegate.swift */; };
+		EE2A86C61D8747ED00D9D2F8 /* NUDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A86B81D8747ED00D9D2F8 /* NUDocument.swift */; };
+		EE2A86CA1D8747ED00D9D2F8 /* TreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A86BE1D8747ED00D9D2F8 /* TreeViewController.swift */; };
+		EE2A86CB1D8747ED00D9D2F8 /* TreeViewControllerContexualtMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A86BF1D8747ED00D9D2F8 /* TreeViewControllerContexualtMenu.swift */; };
+		EE2A86CC1D8747ED00D9D2F8 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A86C01D8747ED00D9D2F8 /* MainWindowController.swift */; };
+		EE2A86CD1D8747ED00D9D2F8 /* BaseTreeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A86C21D8747ED00D9D2F8 /* BaseTreeObject.swift */; };
+		EE2A86CE1D8747ED00D9D2F8 /* NUTreeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A86C31D8747ED00D9D2F8 /* NUTreeObject.swift */; };
+		EE2A86CF1D8747ED00D9D2F8 /* NUTreeRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A86C41D8747ED00D9D2F8 /* NUTreeRecord.swift */; };
+		EE2AA4021D896B1000EC0F84 /* DateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2AA3FB1D896ABD00EC0F84 /* DateUtils.m */; };
+		EE2AA4031D896B1400EC0F84 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2AA3FC1D896ABD00EC0F84 /* Globals.swift */; };
+		EE2AA4041D896B1700EC0F84 /* TypesConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2AA3FE1D896ABD00EC0F84 /* TypesConvert.m */; };
+		EE2B0BE31D924B2000EAB908 /* NUError.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2B0BE11D924B2000EAB908 /* NUError.m */; };
+		EE2DBB161D6F9DB30049E174 /* libbz2.1.0.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE2DBB151D6F9DB30049E174 /* libbz2.1.0.5.tbd */; };
+		EE2DBB181D6F9DD20049E174 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE2DBB171D6F9DD20049E174 /* libz.1.2.5.tbd */; };
+		EE2E6A751DAF763A002D946B /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2E6A741DAF763A002D946B /* PreferencesWindowController.swift */; };
+		EE2E6A771DAF7725002D946B /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2E6A761DAF7725002D946B /* PreferencesViewController.swift */; };
+		EE2E6A791DAF7820002D946B /* GeneralPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2E6A781DAF7820002D946B /* GeneralPreferencesViewController.swift */; };
+		EE3332FF1D8216F90020C6C5 /* NuFX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE18A3321B95924B0093C7F6 /* NuFX.framework */; };
+		EE3333001D8216F90020C6C5 /* NuFX.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE18A3321B95924B0093C7F6 /* NuFX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EE424624204CC14500AD4B20 /* ShrinkItArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = EE424621204CC14500AD4B20 /* ShrinkItArchive.m */; };
+		EE424625204CC14500AD4B20 /* ShrinkItArchiveItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EE424623204CC14500AD4B20 /* ShrinkItArchiveItem.m */; };
+		EE424628204CC1E600AD4B20 /* 65C02.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE424626204CC1E600AD4B20 /* 65C02.plist */; };
+		EE424629204CC1E600AD4B20 /* AppleSoft.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE424627204CC1E600AD4B20 /* AppleSoft.plist */; };
+		EE6446A12E1AA59900EE3B2B /* Documentation.rtf in Resources */ = {isa = PBXBuildFile; fileRef = EE6446A02E1AA55B00EE3B2B /* Documentation.rtf */; };
+		EE7E8C0D203D9E46001798E9 /* HexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7E8C0C203D9E46001798E9 /* HexViewController.swift */; };
+		EEAA8A801EEF8140007E1781 /* AppleSoft.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA8A7E1EEF8140007E1781 /* AppleSoft.swift */; };
+		EEAA8A811EEF8140007E1781 /* Disasm65C02.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA8A7F1EEF8140007E1781 /* Disasm65C02.swift */; };
+		EEB300321F5615E2003D86AD /* SpotlightSHK.mdimporter in Copy Spotlight plugin */ = {isa = PBXBuildFile; fileRef = EEB300251F560E1F003D86AD /* SpotlightSHK.mdimporter */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EEB797861D7003CD008035D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEB797851D7003CD008035D7 /* Assets.xcassets */; };
+		EEB797891D7003CD008035D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB797871D7003CD008035D7 /* Main.storyboard */; };
+		EEB9F2681D8D076200B2290E /* QuickLookSHK.qlgenerator in Copy QuickLook plugin */ = {isa = PBXBuildFile; fileRef = EEB9F2621D8D067300B2290E /* QuickLookSHK.qlgenerator */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EED61D771DB07D6A00F5EF64 /* Secondary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED61D761DB07D6A00F5EF64 /* Secondary.storyboard */; };
+		EED61D791DB07D9E00F5EF64 /* ListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED61D781DB07D9E00F5EF64 /* ListingViewController.swift */; };
+		EED61D7B1DB07F1000F5EF64 /* PreviewWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED61D7A1DB07F1000F5EF64 /* PreviewWindowController.swift */; };
+		EED8B92A1D9A6F10003E87D8 /* HexFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DC8E11D9A1A4300B80E22 /* HexFormatter.swift */; };
+		EEE4E7521DAFBBE400418093 /* defaultPrefs.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEE4E7511DAFBBE400418093 /* defaultPrefs.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE3333011D8216F90020C6C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE18A3011B9590CB0093C7F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE18A3311B95924B0093C7F6;
+			remoteInfo = NuFX;
+		};
+		EEB300241F560E1F003D86AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEB3001F1F560E1F003D86AD /* SpotlightSHK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D576316048677EA00EA77CD;
+			remoteInfo = SpotlightSHK;
+		};
+		EEB9F2611D8D067300B2290E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEB9F25D1D8D067300B2290E /* QuickLookSHK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D576316048677EA00EA77CD;
+			remoteInfo = QuickLookSHK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EE3333031D8216F90020C6C5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EE3333001D8216F90020C6C5 /* NuFX.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB300301F560F77003D86AD /* Copy Spotlight plugin */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/Spotlight;
+			dstSubfolderSpec = 1;
+			files = (
+				EEB300321F5615E2003D86AD /* SpotlightSHK.mdimporter in Copy Spotlight plugin */,
+			);
+			name = "Copy Spotlight plugin";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB9F2661D8D073C00B2290E /* Copy QuickLook plugin */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/QuickLook;
+			dstSubfolderSpec = 1;
+			files = (
+				EEB9F2681D8D076200B2290E /* QuickLookSHK.qlgenerator in Copy QuickLook plugin */,
+			);
+			name = "Copy QuickLook plugin";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EE068FF21D98E482009B582E /* AttributesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributesWindowController.swift; sourceTree = "<group>"; };
+		EE068FF51D98E533009B582E /* AttributesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributesViewController.swift; sourceTree = "<group>"; };
+		EE0BEE071B95C75A0093E88D /* NuFX-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NuFX-Bridging-Header.h"; sourceTree = "<group>"; };
+		EE11B1271F2A8B250060A13A /* NUTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NUTree.swift; sourceTree = "<group>"; };
+		EE17EE951D88B7EC00E6CAC1 /* TreeViewControllerHandleDrops.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeViewControllerHandleDrops.swift; sourceTree = "<group>"; };
+		EE18A3321B95924B0093C7F6 /* NuFX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NuFX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE18A3351B95924B0093C7F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE18A3361B95924B0093C7F6 /* NuFX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NuFX.h; sourceTree = "<group>"; };
+		EE18A3541B9592970093C7F6 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		EE18A3551B9592970093C7F6 /* MiscStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiscStuff.h; sourceTree = "<group>"; };
+		EE18A3561B9592970093C7F6 /* NufxLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NufxLib.h; sourceTree = "<group>"; };
+		EE18A3571B9592970093C7F6 /* NufxLibPriv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NufxLibPriv.h; sourceTree = "<group>"; };
+		EE18A3581B9592970093C7F6 /* SysDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysDefs.h; sourceTree = "<group>"; };
+		EE18A35A1B9592970093C7F6 /* Archive.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Archive.c; sourceTree = "<group>"; };
+		EE18A35B1B9592970093C7F6 /* ArchiveIO.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ArchiveIO.c; sourceTree = "<group>"; };
+		EE18A35C1B9592970093C7F6 /* Bzip2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Bzip2.c; sourceTree = "<group>"; };
+		EE18A35D1B9592970093C7F6 /* Charset.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Charset.c; sourceTree = "<group>"; };
+		EE18A35E1B9592970093C7F6 /* Compress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Compress.c; sourceTree = "<group>"; };
+		EE18A35F1B9592970093C7F6 /* Crc16.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Crc16.c; sourceTree = "<group>"; };
+		EE18A3601B9592970093C7F6 /* Debug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Debug.c; sourceTree = "<group>"; };
+		EE18A3611B9592970093C7F6 /* Deferred.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Deferred.c; sourceTree = "<group>"; };
+		EE18A3621B9592970093C7F6 /* Deflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Deflate.c; sourceTree = "<group>"; };
+		EE18A3631B9592970093C7F6 /* Entry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Entry.c; sourceTree = "<group>"; };
+		EE18A3641B9592970093C7F6 /* Expand.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Expand.c; sourceTree = "<group>"; };
+		EE18A3651B9592970093C7F6 /* FileIO.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FileIO.c; sourceTree = "<group>"; };
+		EE18A3661B9592970093C7F6 /* Funnel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Funnel.c; sourceTree = "<group>"; };
+		EE18A3671B9592970093C7F6 /* Lzc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Lzc.c; sourceTree = "<group>"; };
+		EE18A3681B9592970093C7F6 /* Lzw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Lzw.c; sourceTree = "<group>"; };
+		EE18A3691B9592970093C7F6 /* MiscStuff.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MiscStuff.c; sourceTree = "<group>"; };
+		EE18A36A1B9592970093C7F6 /* MiscUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MiscUtils.c; sourceTree = "<group>"; };
+		EE18A36B1B9592970093C7F6 /* Record.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Record.c; sourceTree = "<group>"; };
+		EE18A36C1B9592970093C7F6 /* SourceSink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SourceSink.c; sourceTree = "<group>"; };
+		EE18A36D1B9592970093C7F6 /* Squeeze.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Squeeze.c; sourceTree = "<group>"; };
+		EE18A36E1B9592970093C7F6 /* Thread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Thread.c; sourceTree = "<group>"; };
+		EE18A36F1B9592970093C7F6 /* Value.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Value.c; sourceTree = "<group>"; };
+		EE18A3701B9592970093C7F6 /* Version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Version.c; sourceTree = "<group>"; };
+		EE25AB762E09863500FDB31A /* TreeViewControllerPromisedFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeViewControllerPromisedFiles.swift; sourceTree = "<group>"; };
+		EE25AB7A2E09879A00FDB31A /* TreeControllerHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeControllerHelpers.swift; sourceTree = "<group>"; };
+		EE2977BC1F2B67160098D8F5 /* CleanupWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanupWindowController.swift; sourceTree = "<group>"; };
+		EE2977BF1F2B6D630098D8F5 /* CleanupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanupViewController.swift; sourceTree = "<group>"; };
+		EE2987941D8011E700947E35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Base; path = Base.lproj/Credits.rtf; sourceTree = "<group>"; };
+		EE2A02CC1DAE50E700CE3667 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		EE2A076E1DAFA22D00EFDD50 /* AdvancedPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedPreferencesViewController.swift; sourceTree = "<group>"; };
+		EE2A86B71D8747ED00D9D2F8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE2A86B81D8747ED00D9D2F8 /* NUDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NUDocument.swift; sourceTree = "<group>"; };
+		EE2A86BE1D8747ED00D9D2F8 /* TreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeViewController.swift; sourceTree = "<group>"; };
+		EE2A86BF1D8747ED00D9D2F8 /* TreeViewControllerContexualtMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeViewControllerContexualtMenu.swift; sourceTree = "<group>"; };
+		EE2A86C01D8747ED00D9D2F8 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		EE2A86C21D8747ED00D9D2F8 /* BaseTreeObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTreeObject.swift; sourceTree = "<group>"; };
+		EE2A86C31D8747ED00D9D2F8 /* NUTreeObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NUTreeObject.swift; sourceTree = "<group>"; };
+		EE2A86C41D8747ED00D9D2F8 /* NUTreeRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NUTreeRecord.swift; sourceTree = "<group>"; };
+		EE2AA3FA1D896ABD00EC0F84 /* DateUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtils.h; sourceTree = "<group>"; };
+		EE2AA3FB1D896ABD00EC0F84 /* DateUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtils.m; sourceTree = "<group>"; };
+		EE2AA3FC1D896ABD00EC0F84 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		EE2AA3FD1D896ABD00EC0F84 /* TypesConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypesConvert.h; sourceTree = "<group>"; };
+		EE2AA3FE1D896ABD00EC0F84 /* TypesConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypesConvert.m; sourceTree = "<group>"; };
+		EE2B0BE01D924B2000EAB908 /* NUError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUError.h; sourceTree = "<group>"; };
+		EE2B0BE11D924B2000EAB908 /* NUError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NUError.m; sourceTree = "<group>"; };
+		EE2DBB151D6F9DB30049E174 /* libbz2.1.0.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.5.tbd; path = usr/lib/libbz2.1.0.5.tbd; sourceTree = SDKROOT; };
+		EE2DBB171D6F9DD20049E174 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		EE2DC8E11D9A1A4300B80E22 /* HexFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexFormatter.swift; sourceTree = "<group>"; };
+		EE2E6A741DAF763A002D946B /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		EE2E6A761DAF7725002D946B /* PreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		EE2E6A781DAF7820002D946B /* GeneralPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralPreferencesViewController.swift; sourceTree = "<group>"; };
+		EE39953B2DFA47A400AFBA18 /* NuShrinkItX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NuShrinkItX.entitlements; sourceTree = "<group>"; };
+		EE424620204CC14500AD4B20 /* ShrinkItArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShrinkItArchive.h; sourceTree = "<group>"; };
+		EE424621204CC14500AD4B20 /* ShrinkItArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShrinkItArchive.m; sourceTree = "<group>"; };
+		EE424622204CC14500AD4B20 /* ShrinkItArchiveItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShrinkItArchiveItem.h; sourceTree = "<group>"; };
+		EE424623204CC14500AD4B20 /* ShrinkItArchiveItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShrinkItArchiveItem.m; sourceTree = "<group>"; };
+		EE424626204CC1E600AD4B20 /* 65C02.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 65C02.plist; sourceTree = "<group>"; };
+		EE424627204CC1E600AD4B20 /* AppleSoft.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppleSoft.plist; sourceTree = "<group>"; };
+		EE6446A02E1AA55B00EE3B2B /* Documentation.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Documentation.rtf; path = Documentation/Documentation.rtf; sourceTree = SOURCE_ROOT; };
+		EE7E8C0C203D9E46001798E9 /* HexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexViewController.swift; sourceTree = "<group>"; };
+		EEAA8A7E1EEF8140007E1781 /* AppleSoft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSoft.swift; sourceTree = "<group>"; };
+		EEAA8A7F1EEF8140007E1781 /* Disasm65C02.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disasm65C02.swift; sourceTree = "<group>"; };
+		EEAE22DF2DF93BCA004541AD /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; wrapsLines = 1; };
+		EEB3001F1F560E1F003D86AD /* SpotlightSHK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpotlightSHK.xcodeproj; path = SpotlightPlugin/SpotlightSHK.xcodeproj; sourceTree = "<group>"; };
+		EEB7977D1D7003CD008035D7 /* NuShrinkItX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NuShrinkItX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEB797851D7003CD008035D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEB797881D7003CD008035D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EEB7978A1D7003CD008035D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEB9F25D1D8D067300B2290E /* QuickLookSHK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QuickLookSHK.xcodeproj; path = QuickLookPlugin/QuickLookSHK.xcodeproj; sourceTree = "<group>"; };
+		EED61D761DB07D6A00F5EF64 /* Secondary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Secondary.storyboard; sourceTree = "<group>"; };
+		EED61D781DB07D9E00F5EF64 /* ListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingViewController.swift; sourceTree = "<group>"; };
+		EED61D7A1DB07F1000F5EF64 /* PreviewWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewWindowController.swift; sourceTree = "<group>"; };
+		EEE4E7511DAFBBE400418093 /* defaultPrefs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defaultPrefs.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE18A32E1B95924B0093C7F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE2DBB181D6F9DD20049E174 /* libz.1.2.5.tbd in Frameworks */,
+				EE2DBB161D6F9DB30049E174 /* libbz2.1.0.5.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB7977A1D7003CD008035D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3332FF1D8216F90020C6C5 /* NuFX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE0BEE111B95CEB60093E88D /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				EE2DBB171D6F9DD20049E174 /* libz.1.2.5.tbd */,
+				EE2DBB151D6F9DB30049E174 /* libbz2.1.0.5.tbd */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		EE18A3001B9590CB0093C7F6 = {
+			isa = PBXGroup;
+			children = (
+				EEAE22DF2DF93BCA004541AD /* Readme.md */,
+				EEB9F25C1D8D065800B2290E /* Plugins */,
+				EE2AA3F91D896ABD00EC0F84 /* Common */,
+				EE0BEE111B95CEB60093E88D /* Libraries */,
+				EE18A3521B9592970093C7F6 /* NufxLib */,
+				EE18A3331B95924B0093C7F6 /* NuFX */,
+				EEB7977E1D7003CD008035D7 /* NuShrinkItX */,
+				EE18A30A1B9590CB0093C7F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE18A30A1B9590CB0093C7F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE18A3321B95924B0093C7F6 /* NuFX.framework */,
+				EEB7977D1D7003CD008035D7 /* NuShrinkItX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE18A3331B95924B0093C7F6 /* NuFX */ = {
+			isa = PBXGroup;
+			children = (
+				EE18A3361B95924B0093C7F6 /* NuFX.h */,
+				EE0BEE071B95C75A0093E88D /* NuFX-Bridging-Header.h */,
+				EE18A3341B95924B0093C7F6 /* Supporting Files */,
+			);
+			path = NuFX;
+			sourceTree = "<group>";
+		};
+		EE18A3341B95924B0093C7F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE18A3351B95924B0093C7F6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE18A3521B9592970093C7F6 /* NufxLib */ = {
+			isa = PBXGroup;
+			children = (
+				EE18A3531B9592970093C7F6 /* Headers */,
+				EE18A3591B9592970093C7F6 /* Source */,
+			);
+			path = NufxLib;
+			sourceTree = "<group>";
+		};
+		EE18A3531B9592970093C7F6 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				EE18A3541B9592970093C7F6 /* config.h */,
+				EE18A3551B9592970093C7F6 /* MiscStuff.h */,
+				EE18A3561B9592970093C7F6 /* NufxLib.h */,
+				EE18A3571B9592970093C7F6 /* NufxLibPriv.h */,
+				EE18A3581B9592970093C7F6 /* SysDefs.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		EE18A3591B9592970093C7F6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EE18A35A1B9592970093C7F6 /* Archive.c */,
+				EE18A35B1B9592970093C7F6 /* ArchiveIO.c */,
+				EE18A35C1B9592970093C7F6 /* Bzip2.c */,
+				EE18A35D1B9592970093C7F6 /* Charset.c */,
+				EE18A35E1B9592970093C7F6 /* Compress.c */,
+				EE18A35F1B9592970093C7F6 /* Crc16.c */,
+				EE18A3601B9592970093C7F6 /* Debug.c */,
+				EE18A3611B9592970093C7F6 /* Deferred.c */,
+				EE18A3621B9592970093C7F6 /* Deflate.c */,
+				EE18A3631B9592970093C7F6 /* Entry.c */,
+				EE18A3641B9592970093C7F6 /* Expand.c */,
+				EE18A3651B9592970093C7F6 /* FileIO.c */,
+				EE18A3661B9592970093C7F6 /* Funnel.c */,
+				EE18A3671B9592970093C7F6 /* Lzc.c */,
+				EE18A3681B9592970093C7F6 /* Lzw.c */,
+				EE18A3691B9592970093C7F6 /* MiscStuff.c */,
+				EE18A36A1B9592970093C7F6 /* MiscUtils.c */,
+				EE18A36B1B9592970093C7F6 /* Record.c */,
+				EE18A36C1B9592970093C7F6 /* SourceSink.c */,
+				EE18A36D1B9592970093C7F6 /* Squeeze.c */,
+				EE18A36E1B9592970093C7F6 /* Thread.c */,
+				EE18A36F1B9592970093C7F6 /* Value.c */,
+				EE18A3701B9592970093C7F6 /* Version.c */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		EE2A86B61D8747ED00D9D2F8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE2A86B71D8747ED00D9D2F8 /* AppDelegate.swift */,
+				EE068FF51D98E533009B582E /* AttributesViewController.swift */,
+				EE068FF21D98E482009B582E /* AttributesWindowController.swift */,
+				EE2977BC1F2B67160098D8F5 /* CleanupWindowController.swift */,
+				EE2977BF1F2B6D630098D8F5 /* CleanupViewController.swift */,
+				EE7E8C0C203D9E46001798E9 /* HexViewController.swift */,
+				EED61D781DB07D9E00F5EF64 /* ListingViewController.swift */,
+				EE2A86C01D8747ED00D9D2F8 /* MainWindowController.swift */,
+				EE2E6A761DAF7725002D946B /* PreferencesViewController.swift */,
+				EE2E6A741DAF763A002D946B /* PreferencesWindowController.swift */,
+				EE2E6A781DAF7820002D946B /* GeneralPreferencesViewController.swift */,
+				EE2A076E1DAFA22D00EFDD50 /* AdvancedPreferencesViewController.swift */,
+				EED61D7A1DB07F1000F5EF64 /* PreviewWindowController.swift */,
+				EE2A02CC1DAE50E700CE3667 /* TableViewController.swift */,
+				EE2A86BE1D8747ED00D9D2F8 /* TreeViewController.swift */,
+				EE2A86BF1D8747ED00D9D2F8 /* TreeViewControllerContexualtMenu.swift */,
+				EE25AB7A2E09879A00FDB31A /* TreeControllerHelpers.swift */,
+				EE17EE951D88B7EC00E6CAC1 /* TreeViewControllerHandleDrops.swift */,
+				EE25AB762E09863500FDB31A /* TreeViewControllerPromisedFiles.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EE2A86C11D8747ED00D9D2F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE424626204CC1E600AD4B20 /* 65C02.plist */,
+				EE424627204CC1E600AD4B20 /* AppleSoft.plist */,
+				EEAA8A7E1EEF8140007E1781 /* AppleSoft.swift */,
+				EE2A86C21D8747ED00D9D2F8 /* BaseTreeObject.swift */,
+				EEAA8A7F1EEF8140007E1781 /* Disasm65C02.swift */,
+				EE2A86B81D8747ED00D9D2F8 /* NUDocument.swift */,
+				EE11B1271F2A8B250060A13A /* NUTree.swift */,
+				EE2A86C31D8747ED00D9D2F8 /* NUTreeObject.swift */,
+				EE2A86C41D8747ED00D9D2F8 /* NUTreeRecord.swift */,
+				EE424620204CC14500AD4B20 /* ShrinkItArchive.h */,
+				EE424621204CC14500AD4B20 /* ShrinkItArchive.m */,
+				EE424622204CC14500AD4B20 /* ShrinkItArchiveItem.h */,
+				EE424623204CC14500AD4B20 /* ShrinkItArchiveItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE2AA3F91D896ABD00EC0F84 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EE2B0BE01D924B2000EAB908 /* NUError.h */,
+				EE2B0BE11D924B2000EAB908 /* NUError.m */,
+				EE2AA3FA1D896ABD00EC0F84 /* DateUtils.h */,
+				EE2AA3FB1D896ABD00EC0F84 /* DateUtils.m */,
+				EE2AA3FC1D896ABD00EC0F84 /* Globals.swift */,
+				EE2AA3FD1D896ABD00EC0F84 /* TypesConvert.h */,
+				EE2AA3FE1D896ABD00EC0F84 /* TypesConvert.m */,
+				EE2DC8E11D9A1A4300B80E22 /* HexFormatter.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EEB300201F560E1F003D86AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEB300251F560E1F003D86AD /* SpotlightSHK.mdimporter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEB7977E1D7003CD008035D7 /* NuShrinkItX */ = {
+			isa = PBXGroup;
+			children = (
+				EE2A86B61D8747ED00D9D2F8 /* Controllers */,
+				EE2A86C11D8747ED00D9D2F8 /* Model */,
+				EE2987931D8011E700947E35 /* Credits.rtf */,
+				EE6446A02E1AA55B00EE3B2B /* Documentation.rtf */,
+				EE39953B2DFA47A400AFBA18 /* NuShrinkItX.entitlements */,
+				EEB797851D7003CD008035D7 /* Assets.xcassets */,
+				EEB797871D7003CD008035D7 /* Main.storyboard */,
+				EED61D761DB07D6A00F5EF64 /* Secondary.storyboard */,
+				EEB7978A1D7003CD008035D7 /* Info.plist */,
+				EEE4E7511DAFBBE400418093 /* defaultPrefs.plist */,
+			);
+			path = NuShrinkItX;
+			sourceTree = "<group>";
+		};
+		EEB9F25C1D8D065800B2290E /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				EEB9F25D1D8D067300B2290E /* QuickLookSHK.xcodeproj */,
+				EEB3001F1F560E1F003D86AD /* SpotlightSHK.xcodeproj */,
+			);
+			name = Plugins;
+			sourceTree = "<group>";
+		};
+		EEB9F25E1D8D067300B2290E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEB9F2621D8D067300B2290E /* QuickLookSHK.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EE18A32F1B95924B0093C7F6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE18A3741B9592970093C7F6 /* NufxLibPriv.h in Headers */,
+				EE18A3731B9592970093C7F6 /* NufxLib.h in Headers */,
+				EE18A3711B9592970093C7F6 /* config.h in Headers */,
+				EE18A3751B9592970093C7F6 /* SysDefs.h in Headers */,
+				EE0BEE081B95C75A0093E88D /* NuFX-Bridging-Header.h in Headers */,
+				EE18A3371B95924B0093C7F6 /* NuFX.h in Headers */,
+				EE18A3721B9592970093C7F6 /* MiscStuff.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EE18A3311B95924B0093C7F6 /* NuFX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE18A34F1B95924B0093C7F6 /* Build configuration list for PBXNativeTarget "NuFX" */;
+			buildPhases = (
+				EE18A32D1B95924B0093C7F6 /* Sources */,
+				EE18A32E1B95924B0093C7F6 /* Frameworks */,
+				EE18A32F1B95924B0093C7F6 /* Headers */,
+				EE18A3301B95924B0093C7F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NuFX;
+			productName = NuFX;
+			productReference = EE18A3321B95924B0093C7F6 /* NuFX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EEB7977C1D7003CD008035D7 /* NuShrinkItX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEB7978B1D7003CD008035D7 /* Build configuration list for PBXNativeTarget "NuShrinkItX" */;
+			buildPhases = (
+				EEB797791D7003CD008035D7 /* Sources */,
+				EEB7977A1D7003CD008035D7 /* Frameworks */,
+				EEB7977B1D7003CD008035D7 /* Resources */,
+				EE3333031D8216F90020C6C5 /* Embed Frameworks */,
+				EEB9F2661D8D073C00B2290E /* Copy QuickLook plugin */,
+				EEB300301F560F77003D86AD /* Copy Spotlight plugin */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE3333021D8216F90020C6C5 /* PBXTargetDependency */,
+			);
+			name = NuShrinkItX;
+			productName = NuShrinkItX;
+			productReference = EEB7977D1D7003CD008035D7 /* NuShrinkItX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE18A3011B9590CB0093C7F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Mark Lim";
+				TargetAttributes = {
+					EE18A3311B95924B0093C7F6 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					EEB7977C1D7003CD008035D7 = {
+						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = EE18A3041B9590CB0093C7F6 /* Build configuration list for PBXProject "NuShrinkItX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = EE18A3001B9590CB0093C7F6;
+			productRefGroup = EE18A30A1B9590CB0093C7F6 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EEB9F25E1D8D067300B2290E /* Products */;
+					ProjectRef = EEB9F25D1D8D067300B2290E /* QuickLookSHK.xcodeproj */;
+				},
+				{
+					ProductGroup = EEB300201F560E1F003D86AD /* Products */;
+					ProjectRef = EEB3001F1F560E1F003D86AD /* SpotlightSHK.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				EEB7977C1D7003CD008035D7 /* NuShrinkItX */,
+				EE18A3311B95924B0093C7F6 /* NuFX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EEB300251F560E1F003D86AD /* SpotlightSHK.mdimporter */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SpotlightSHK.mdimporter;
+			remoteRef = EEB300241F560E1F003D86AD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EEB9F2621D8D067300B2290E /* QuickLookSHK.qlgenerator */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = QuickLookSHK.qlgenerator;
+			remoteRef = EEB9F2611D8D067300B2290E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE18A3301B95924B0093C7F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB7977B1D7003CD008035D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE424629204CC1E600AD4B20 /* AppleSoft.plist in Resources */,
+				EE424628204CC1E600AD4B20 /* 65C02.plist in Resources */,
+				EE2987951D8011E700947E35 /* Credits.rtf in Resources */,
+				EE6446A12E1AA59900EE3B2B /* Documentation.rtf in Resources */,
+				EEE4E7521DAFBBE400418093 /* defaultPrefs.plist in Resources */,
+				EEB797861D7003CD008035D7 /* Assets.xcassets in Resources */,
+				EEB797891D7003CD008035D7 /* Main.storyboard in Resources */,
+				EED61D771DB07D6A00F5EF64 /* Secondary.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE18A32D1B95924B0093C7F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE18A3891B9592970093C7F6 /* Squeeze.c in Sources */,
+				EE18A3851B9592970093C7F6 /* MiscStuff.c in Sources */,
+				EE18A3861B9592970093C7F6 /* MiscUtils.c in Sources */,
+				EE18A3801B9592970093C7F6 /* Expand.c in Sources */,
+				EE18A3791B9592970093C7F6 /* Charset.c in Sources */,
+				EE18A38B1B9592970093C7F6 /* Value.c in Sources */,
+				EE18A3781B9592970093C7F6 /* Bzip2.c in Sources */,
+				EE18A3771B9592970093C7F6 /* ArchiveIO.c in Sources */,
+				EE18A37C1B9592970093C7F6 /* Debug.c in Sources */,
+				EE18A37D1B9592970093C7F6 /* Deferred.c in Sources */,
+				EE18A37E1B9592970093C7F6 /* Deflate.c in Sources */,
+				EE18A37F1B9592970093C7F6 /* Entry.c in Sources */,
+				EE18A37B1B9592970093C7F6 /* Crc16.c in Sources */,
+				EE18A3811B9592970093C7F6 /* FileIO.c in Sources */,
+				EE18A3821B9592970093C7F6 /* Funnel.c in Sources */,
+				EE18A3881B9592970093C7F6 /* SourceSink.c in Sources */,
+				EE18A38A1B9592970093C7F6 /* Thread.c in Sources */,
+				EE18A38C1B9592970093C7F6 /* Version.c in Sources */,
+				EE18A3831B9592970093C7F6 /* Lzc.c in Sources */,
+				EE18A3871B9592970093C7F6 /* Record.c in Sources */,
+				EE18A3841B9592970093C7F6 /* Lzw.c in Sources */,
+				EE18A37A1B9592970093C7F6 /* Compress.c in Sources */,
+				EE18A3761B9592970093C7F6 /* Archive.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB797791D7003CD008035D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE2AA4021D896B1000EC0F84 /* DateUtils.m in Sources */,
+				EEAA8A811EEF8140007E1781 /* Disasm65C02.swift in Sources */,
+				EED8B92A1D9A6F10003E87D8 /* HexFormatter.swift in Sources */,
+				EE25AB7B2E09879A00FDB31A /* TreeControllerHelpers.swift in Sources */,
+				EE2AA4041D896B1700EC0F84 /* TypesConvert.m in Sources */,
+				EE2977BD1F2B67160098D8F5 /* CleanupWindowController.swift in Sources */,
+				EE25AB772E09863500FDB31A /* TreeViewControllerPromisedFiles.swift in Sources */,
+				EE2A02CD1DAE50E700CE3667 /* TableViewController.swift in Sources */,
+				EE068FF61D98E533009B582E /* AttributesViewController.swift in Sources */,
+				EE2E6A791DAF7820002D946B /* GeneralPreferencesViewController.swift in Sources */,
+				EE2AA4031D896B1400EC0F84 /* Globals.swift in Sources */,
+				EE2A86C51D8747ED00D9D2F8 /* AppDelegate.swift in Sources */,
+				EE2E6A771DAF7725002D946B /* PreferencesViewController.swift in Sources */,
+				EE2A86CB1D8747ED00D9D2F8 /* TreeViewControllerContexualtMenu.swift in Sources */,
+				EE17EE961D88B7EC00E6CAC1 /* TreeViewControllerHandleDrops.swift in Sources */,
+				EED61D791DB07D9E00F5EF64 /* ListingViewController.swift in Sources */,
+				EE2A86CA1D8747ED00D9D2F8 /* TreeViewController.swift in Sources */,
+				EE2A076F1DAFA22D00EFDD50 /* AdvancedPreferencesViewController.swift in Sources */,
+				EE2E6A751DAF763A002D946B /* PreferencesWindowController.swift in Sources */,
+				EE2A86CF1D8747ED00D9D2F8 /* NUTreeRecord.swift in Sources */,
+				EE2A86CD1D8747ED00D9D2F8 /* BaseTreeObject.swift in Sources */,
+				EE2977C01F2B6D630098D8F5 /* CleanupViewController.swift in Sources */,
+				EEAA8A801EEF8140007E1781 /* AppleSoft.swift in Sources */,
+				EE11B1281F2A8B250060A13A /* NUTree.swift in Sources */,
+				EE7E8C0D203D9E46001798E9 /* HexViewController.swift in Sources */,
+				EE2A86CC1D8747ED00D9D2F8 /* MainWindowController.swift in Sources */,
+				EE2A86C61D8747ED00D9D2F8 /* NUDocument.swift in Sources */,
+				EE424624204CC14500AD4B20 /* ShrinkItArchive.m in Sources */,
+				EE2A86CE1D8747ED00D9D2F8 /* NUTreeObject.swift in Sources */,
+				EE068FF31D98E482009B582E /* AttributesWindowController.swift in Sources */,
+				EE2B0BE31D924B2000EAB908 /* NUError.m in Sources */,
+				EE424625204CC14500AD4B20 /* ShrinkItArchiveItem.m in Sources */,
+				EED61D7B1DB07F1000F5EF64 /* PreviewWindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE3333021D8216F90020C6C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE18A3311B95924B0093C7F6 /* NuFX */;
+			targetProxy = EE3333011D8216F90020C6C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE2987931D8011E700947E35 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE2987941D8011E700947E35 /* Base */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		EEB797871D7003CD008035D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEB797881D7003CD008035D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE18A3251B9590CB0093C7F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "NuFX/NuFX-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		EE18A3261B9590CB0093C7F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "NuFX/NuFX-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		EE18A34B1B95924B0093C7F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NuFX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incrementalinnovation.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EE18A34C1B95924B0093C7F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = NuFX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incrementalinnovation.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EEB7978C1D7003CD008035D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NuShrinkItX/NuShrinkItX.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = NuShrinkItX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = incrementalinnovation.NuShrinkItX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EEB7978D1D7003CD008035D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NuShrinkItX/NuShrinkItX.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = NuShrinkItX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = incrementalinnovation.NuShrinkItX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE18A3041B9590CB0093C7F6 /* Build configuration list for PBXProject "NuShrinkItX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE18A3251B9590CB0093C7F6 /* Debug */,
+				EE18A3261B9590CB0093C7F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE18A34F1B95924B0093C7F6 /* Build configuration list for PBXNativeTarget "NuFX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE18A34B1B95924B0093C7F6 /* Debug */,
+				EE18A34C1B95924B0093C7F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEB7978B1D7003CD008035D7 /* Build configuration list for PBXNativeTarget "NuShrinkItX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEB7978C1D7003CD008035D7 /* Debug */,
+				EEB7978D1D7003CD008035D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE18A3011B9590CB0093C7F6 /* Project object */;
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>NuFX.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>NuShrinkItX.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>EE18A3081B9590CB0093C7F6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE18A31C1B9590CB0093C7F6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE18A3311B95924B0093C7F6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE18A33B1B95924B0093C7F6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE299F7A1D6FE38B00BFC79F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE299F8A1D6FE38B00BFC79F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE299F951D6FE38B00BFC79F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE3332EC1D82150B0020C6C5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EEB7977C1D7003CD008035D7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
