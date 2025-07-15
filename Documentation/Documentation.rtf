@@ -1,0 +1,312 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\froman\fcharset0 TimesNewRomanPSMT;\f1\froman\fcharset0 TimesNewRomanPS-BoldMT;\f2\froman\fcharset0 TimesNewRomanPS-ItalicMT;
+}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1134\margr1134\margb1134\margt1134\vieww21980\viewh14300\viewkind0
+\deftab709
+\pard\pardeftab709\partightenfactor0
+
+\f0\fs40 \cf0 Swift NuShrinkItX: Release 1.01\
+\
+
+\f1\b Introduction
+\f0\b0 \
+\
+This program is written in Swift and Objective-C with 2 storyboards providing the UI. As such, its system requirement is Mac OS X 10.10 or later. The Swift version of NuShrinkItX was initially ported with XCode 7.2 running under Mac OS X 10.10.5. It was subsequently upgraded to Swift 3.3 and finally to Swift 5.0.\
+\
+The UI is a window with a single widget which is an instance of the Cocoa class 
+\f2\i NSOutlineView
+\f0\i0  (TreeView). The user edits the underlying document by dragging-and-dropping items onto this widget.\
+\
+The underlying library(framework in macOS terminology) is Andy Fadden's NuFX library compiled as a embedded framework.\
+\
+The program allows a user to\
+\
+1) create a new SHK archive, and,\
+2) modify any existing archive supported by the NuFX library.\
+\
+Currently there are only 8 basic operations:\
+\
+a) drag-and-drop of files (including folders) from an archive to a folder managed by the OS X Finder,\
+b) drag-and-drop of files (including sub-folders) from a folder managed by Finder to an archive,\
+c) internal drag-and-drops,\
+d) inter-document drag-and-drops, and,\
+e) removal of unwanted items from the archive via a contextual menu,\
+f) adding of disk images to an archive,\
+g) changing the file and auxiliary types of a file within an archive as well as its access bits.\
+h) preview of certain types of files.\
+\
+There is one important detail: NuShrinkItX will always open an archive in read/write mode. The application will check to ensure that the medium (HDD, USB drives or DMG) is writable. Don\'92t open a NuFX document that is stored on a CD-ROM or DVD-ROM.\
+\
+Due to changes in macOS, the functionality of the current Swift version of NuShrinkItX is slightly different from its Objective-C counterpart. \
+\
+a) When the user clicks on the close box of a modified archive, an alert is brought up.\
+b) When the user quits the application, another alert is displayed if there are modified archives which had not be saved.\
+\
+An attempt of a backup of the archive will be made. If the original filename is \'93archive.shk\'94, the backup file will be \'93archive.shk.BAK\'94. There shouldn\'92t be a folder named \'93archive.shk.BAK\'94 within the parent folder of the original archive.\
+\
+\
+
+\f1\b NuShrinkItX Menu
+\f0\b0 \
+
+\f2\i \
+About NuShrinkItX
+\f0\i0 \
+Just to display the copyrights, disclaimer etc as well as the people who had contributed to this project.\
+\
+
+\f2\i Preferences\'85
+\f0\i0 \
+There are 2 options viz. General and Advanced\
+\
+General:\
+The two sub-options are for SHK documents to be created.\
+Sub-option 1:  Save archive as:\
+The user may change the default document name to something else. There is no check on the validity of the filename. \
+\
+Sub-option 2:  Overwrite archive automatically:\
+The default is to overwrite existing SHK documents at the selected location.\
+\
+Advanced:\
+The user can choose the compression algorithm. However, if he/she wants to share SHK files with others then the default option LZW2 is the best choice. For better compression ratios, Zip or BZip are better choices.\
+\
+
+\f2\i Quit NuShrinkItX
+\f0\i0 \
+The user will be prompted to save any modified archives which have not been saved.\
+\
+
+\f1\b File Menu
+\f0\b0 \
+
+\f2\i \
+New Archive\'85
+\f0\i0 \
+A Save Panel will be displayed to enable the user choose a destination folder as well as prompt him/her for the name of the archive to be created within that directory. NuShrinkItX will check if the selected folder has write permissions. By default any existing document with the name of the SHK archive to be created will be overwritten without asking. Use the Preferences window to change the defaults.\
+\
+Please note: Andy\'92s NuFX library can only create SHK archives.\
+\
+
+\f2\i Open Archive\'85
+\f0\i0 \
+An Open Panel will be displayed asking the user to select an NuFX archive to be opened. NuFX documents with the following file extensions will be shown as selectable: 
+\f1\b bxy, bse, sdk, shk 
+\f0\b0 and
+\f1\b  sea
+\f0\b0 . The user can use the panel to navigate to the folder of his choice. Multiple documents may be selected and opened. \
+\
+The user may also drag-and-drop any NuFX document onto NuShrinkItX\'92s icon in the dock if the program is up and running.\
+\
+
+\f2\i Open Recent
+\f0\i0 \
+This needs little explanation.\
+\
+
+\f2\i Close
+\f0\i0 \
+Typing Cmd-W will close the active window managed by NuShrinkItX. The program will automatically save any changes made to the NuFX document. The close box at the upper right hand corner of the window can also be used for this purpose.\
+\
+
+\f2\i Save
+\f0\i0 \
+Typing Cmd-S will save any changes to the active document whose window is managed by NuShrinkItX.\
+\
+\
+
+\f1\b Edit Menu
+\f0\b0 \
+
+\f2\i Select All
+\f0\i0 \
+Cmd-A will select all items in the outlineview widget. The user can then perform drag-and-drops to Finder\'92s desktop or to another NuShrinkItX window.\
+\
+
+\f2\i Cleanup
+\f0\i0 \
+As mentioned under Notes, NuShrinkItX relies on custom extended attributes attached to each file to preserve some of the attributes of items archived in a NuFX document. If the user had dragged items from a NuFX archive to a folder managed by Finder, each of the copied files will have an  attached custom extended attribute.\
+\
+Doing a ls -l@ at the command prompt of a console will show all extended attributes currently attached to a file. These extended attributes may include \'93com.apple.FinderInfo\'94, \'93com.apple.ResourceFork\'94 and/or \'93com.apple.NuFX\'94. The last-named extended attribute is used by NuShrinkItX.\
+\
+This option will remove the extended attribute attached to a file by NuShrinkItX. The user may select one or more files/folders, click on the 
+\f1\b Clean
+\f0\b0  button and the \'93com.apple.NuFX\'94 extended attribute will be removed from all files including those residing in the selected folders. Please note symbolic links will not be followed.\
+\
+In the event of a lengthy cleanup process, a window with a single 
+\f1\b Cancel
+\f0\b0  button is put up to abort the execution.\
+\
+Do note that a GS/OS option list is part of a blob of extended attribute data. If the user intends to build a new archive using the file which was originally from a NuFX archive, then he/she should not remove its \'93com.apple.NuFX\'94 extended attribute.\
+\
+It is recommended the user create a working folder for dragging files from a NuFX archive to Finder. Cleaning up extended attributes might be faster. In fact, if the user deletes all files within this folder, there is no need to select the menu item "Clean up...". Just trash the working folder.\
+\
+See 
+\f1\b Notes
+\f0\b0  section for more details on file attributes.\
+\
+\
+
+\f1\b Contextual Menu
+\f0\b0 \
+There are 4 options.\
+
+\f2\i Option: Add Disk Image\'85
+\f0\i0 \
+This will bring up an Open Panel to allow the user add a disk image to an archive. Files with the following file extensions will be displayed as selectable: do, po, dsk and img. \
+\
+Although a disk image can be dragged-and-dropped onto the outlineview widget, it will not be recorded in the archive as a disk image. Hence, the necessity of this option. \
+\
+It is important to note that the size of the disk image must be a multiple of 512 bytes or equal to the storageType * auxType (extraType - cf: Tech Note $E0/8002). NuFX library will not compressed disk images which do not conform to either of these 2 criteria.\
+\
+
+\f1\b Warning:
+\f0\b0  Don\'92t attempt to edit a disk image\'92s auxiliary type by opening up the Attributes modal dialog.\
+\
+It is advisable before adding a disk image to the archive to use Finder\'92s contextual menu item \'93Get Info\'94 to check its size. Sometimes, the disk image may have a resource fork attached to it. OS X may include the size of this fork when returning the file size.\
+For example, to remove the resource fork from a disk image named 
+\f2\i sample.img
+\f0\i0 , type the following from a console:\
+\
+	xattr -d \'93com.apple.ResourceFork\'94 sample.img\
+\
+There are disk images in which the underlying raw data is actually a multiple of 512 bytes but they have a header and trailer data (cf: Tech Note $E0/0005). They must be converted if the user intends to add them to a NuFX archive.\
+\
+
+\f2\i Hint
+\f0\i0 : One can obtain a 1.4 MB 
+\f2\i raw disk image
+\f0\i0  easily using the followings steps:\
+1) Use the Sweet16 emulator to create a 1.4 MB disk image (DiskCopy 4.2 format).\
+2) Remove the first 84 bytes using a Hex Editor e.g. HexFiend. These 84 bytes are the header of the disk image.\
+\
+Sweet16 can use the raw disk image.\
+\
+On the other hand, if you had created a universal disk image, remove the first 64 bytes.\
+Don\'92t forget to change the file extension to dsk, img or po. \
+\
+Given below is a table is a guide for size of raw disk images that conforms to the criteria set by the NuFX library:\
+\
+disk size				number of bytes				# of disk blocks\
+ 140 KB			 140 x 1024 =    143 360			   280 ($0118)\
+ 800 KB			 800 x 1024 =    819 200			1 600 ($0640)\
+1440 KB		1440 x 1024 = 1 474 560			2 880 ($0B40)\
+\
+Be aware that disk images with a block size of 524 may exist.\
+\
+
+\f2\i Option:Edit Attributes
+\f0\i0 \
+The user must right-click (control-click) on a file (not folder) when selecting this option. An application modal dialog will appear. Only 3 attributes may be modified viz. file type, auxiliary type and access bits of the selected file. The attributes are changed by clicking on the UI element described below:\
+\
+a) Click on the pull down menu to change the file\'92s file type.\
+b) A hex decimal number may be entered in the text field; up to 4 digits may be typed if the user want to change the auxiliary type.\
+c) To change a file\'92s access bits, click on any of the 6 checkmark boxes.\
+\
+Click on the 
+\f1\b Apply
+\f0\b0  button to change these attributes permanently.\
+To dismiss the window, click on the close box (at the upper left hander corner of the window). If the user closes the window without first clicking on the 
+\f1\b Apply
+\f0\b0  button, whatever changes made will not be recorded.\
+\
+Please note: the user must dismiss the Attributes modal dialog to continue using NuShrinkItX.\
+\
+
+\f1\b Note:
+\f0\b0  If the file is actually a 
+\f1\b disk image
+\f0\b0 , don\'92t edit the 
+\f2\i auxiliary type
+\f0\i0  because it represents its capacity in terms of the number of disk blocks. For example, a 1 440 KB disk image has 2 880 blocks (each 512 bytes) and its value in hex decimal is $0B40.\
+\
+
+\f2\i Option: Delete
+\f0\i0 \
+The behaviour is similar to Finder i.e. a right-click (or control-click) takes precedence over 
+\f1\b selected
+\f0\b0  items if the mouse down is NOT on a selected item. If the right-click is on a selected item and there are more than 1 selected item, all the highlighted files/folders will be deleted.\
+\
+The user may also delete files/folders  by dragging-and-dropping the items to the Trash.  \
+\
+
+\f2\i Option: Preview
+\f0\i0 \
+The following files must be previews: AppleSoft BASIC, 65C02 BIN/SYS and certain text files:\
+3 letter abrv.		filetype/auxtype		\
+	TXT			$04\
+	SRC			$B0 \
+	GWP			$50/$5445 (Teach)\
+\
+Preview of Merlin Assembler source files are also supported. The contents of the preview window may be selected for a copy-and-paste operation to any text editor e.g. TextEdit.\
+\
+
+\f1\b Some Technical Details
+\f0\b0 \
+Unlike the previous Objective-C version of NuShrinkItX, this program is written using a different approach.  The program is designed to take advantage of the following facts:\
+\
+1) computers have TeraBytes of HDD storage and GigaBytes of main memory and,\
+2) the file sizes of ShrinkIt archives are relatively-speaking very small,\
+\
+The logic behind program execution is: \
+a) It extracts all archived files from a NuFX document and writes these (with relevant information attached) to a temporary location on the user's HDD. For want of a better phrase, the term "archive-on-disk" is used.\
+b) It then builds the UI by reading the files from the archive-on-disk.\
+c) The user can edit the archive-on-disk using drag-and-drops on the UI (outlineview widget).\
+d) It saves a user\'92s work by first renaming the original archive adding a file extension 
+\f1\b BAK
+\f0\b0  to the original file name. This is followed by  reading all files from the archive-on-disk and writing the data to a 
+\f2\i new
+\f0\i0  NuFX document with the file name of the original file. \
+\
+The user should take note that the NuFX  library will not save archives which are empty.\
+\
+During editing what the user is actually doing is copying/moving/deleting files on his HDD. The user can actually, via a console, cd to the location of the archive-on-disk which is just temporary folder which will disappear when the computer is re-booted or on a shutdown.\
+\
+
+\f1\b Notes
+\f0\b0 :\
+\
+1) Preservation of attributes\
+To preserve some of the attributes of a item of a NuFX archive, a set of custom extended attributes is attached to a file when it is written to the HDD. This is to ensure that there will be no loss of information while the file resides on a Mac HDD. It seems the original NuFX library only support the preservation of GS/OS option lists if these are present in an existing archive.\
+\
+It does not support adding GS/OS option lists to the archived items of an existing NuFX document.  However, NuShrinkItX uses a modified version of the NuFX library which has support for including a GS/OS option list when a file is added to a NuFX archive.\
+\
+2) Default file attributes\
+All files dragged from Finder to the archive-on-disk will have 
+\f1\b 1
+\f0\b0  (ProDOS) as the file_sys_id and 
+\f1\b 0x2f
+\f0\b0  (/) as the file_sys_info (file system separator) unless those files were previously dragged from a NuFX archive to Finder\'92s desktop.\
+\
+3) Normalization of filenames not done yet. The user must ensure that forward slashes (/) must not appear in a filename or pathname of an NuFX archived item. The program may crash because Mac OS X\'92s Cocoa framework  treats / as a file separator. NuShrinkItX will not open any NuFX archive which contains items whose path components has a /. To elaborate, suppose an archive item\'92s pathname is \
+\
+BrkDown:BrkDown:Help:Help.files:BrkDown:Appendix,\
+\
+ the path components are \'93BrkDown\'94,  \'93Help\'94, \'93Help.files\'94, \'93BrkDown\'94, \'93Appendix\'94.\
+\
+Notice the first component is not preceded by a colon and the last component does not end with a : (the colon is the file separator of this item\'92s pathname). Having a / as a character in any of these 5 path components should be avoided.\
+\
+BTW, the OS X Finder can actually accept  / as a character in a filename; however, if such a file is dropped into a NuShrinkItX window, it will be converted to a colon.\
+\
+To avoid potential problems, it is best not to use any colon, forward slash and backward slash when naming files/folders if the user intend to use them to create or modify NuFX archives on any computer platform. That goes too for the native file systems like GS/OS, HFS. Not only that, control-characters which may be legal for native file systems like DOS 3.x are a no-no for OS X etc.\
+\
+4) Empty folders - folders with no items\
+The files in a NuFX archive are stored as leaves (File Technical Note $E0/$8002). NuShrinkItX will not allow folders to be created. If an empty folder dropped from Finder, it will not result in the creation of one. If the user deletes all items of a folder within the archive-on-disk, the empty folder will still be displayed. But if the user closes and re-opens the archive, it will not be there.\
+\
+5) Inter-application drops are supported in this version. Care must be taken not to add large number of files to a ShrinkIt archive. NuShrinkItX will delay the copying of files by 2.0 s to allow the source application to copy the files to a specific disk location. After the delay, NuShrinkItX will copy whatever files are present in that disk location to the ShrinkIt archive.\
+\
+6)  File copying and moving during drags-and-drops\
+For inter-document drops and drops from Finder, files/folders within the destination folder which have names identical to those of the dragged items will be over-written.\
+\
+For internal (intra-document) drops, files/folders within the destination folder with names identical to those of the dragged items will be deleted and the dragged files/folders moved into place.\
+\
+QuickLook plugin\
+7) To help the user during building of a new archive or modification of an existing one, a QuickLook plugin is now included in NuShrinkItX. When NuShrinkItX is run from a DMG, it might be necessary to type (at the console)\
+\
+	qlmanage -r\
+\
+8) One caveat: all file copy operations are done on the main thread. If the program has to process lots of files, the UI thread (which is the main thread) might be blocked.\
+\
+\
+}
