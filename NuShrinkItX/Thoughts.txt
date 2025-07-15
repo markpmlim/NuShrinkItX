@@ -1,0 +1,37 @@
+KIV: It is possible to navigate up and down the directory tree. We can use another var rootDirPath to indicate the path of the top level directory. workDirName is renamed to currWorkDirPath
+
+Done: Provide a search field
+Use an NSTabViewController with 2 child view controllers. An instance of NSTabViewController will be the window’s contentViewController. One child view controller will contain an NSOutlineView, the other an NSTableView. Can we still get access to the  child view controller which will provide the dragged nodes during an inter-document drop?
+
+The draggingSource is an instance of NSOutlineView. It’s superview is an instance of NSView (srcView). srcView’s window contentViewController is an instance of NSTabViewController.
+
+NSSearchField box: add to main window controller -  
+
+how to swap the NSOutlineView and NSTableView? Action-Target (handleSearchQuery) but which view controller or window controller? use a delegate?
+
+Done: preserving optionList
+The source code was modified.
+
+
+Currently the default fileSysID is ProDOS and the fileSysInfo is 0x2f. The latter value is identical to the OS X file separator
+
+Confirmed:
+The NSFileManager call moveItemAtPath:toPath:
+
+will preserve both system-defined and user-defined extended attributes. But the methods:
+
+createFileAtPath:contents:attributes:
+copyItemAtPath:toPath:
+
+do not. In other words, XATTR_FINDERINFO_NAME, XATTR_RESOURCEFORK_NAME, and XATT_NUFX_NAME are partially supported. 
+
+Modify existing archive:
+
+After loading the data from the ShrinkIt document, we use the instances of ShrinkitArchiveItems to write to the temporary folder(archive in-situ). After which we don’t really need them anymore.
+
+When new files are added to the archive in-situ, instances of ShrinkitArchiveItems need not be created. Similarly, if the items are deleted from or moved with the archive in-situ.
+
+The file’s attributes and its extended attributes are needed only when the SHK document is  written.
+
+
+We need to create instances of ShrinkitArchiveItems from the files in the archive in-situ. This step is required to prepare the data for output to an entirely new document.
