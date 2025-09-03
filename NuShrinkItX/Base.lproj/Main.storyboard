@@ -1079,7 +1079,7 @@
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="fRl-je-gqX">
                                                                     <rect key="frame" x="0.0" y="0.0" width="120" height="16"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="hnC-vp-Utd">
-                                                                        <dateFormatter key="formatter" dateStyle="short" id="5Jh-Cf-UUo"/>
+                                                                        <dateFormatter key="formatter" formatterBehavior="custom10_4" dateStyle="short" dateFormat="yyyy-MM-dd" id="5Jh-Cf-UUo"/>
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
